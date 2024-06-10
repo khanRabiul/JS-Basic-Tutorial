@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameter</title>
+</head>
+<body>
+    
+
+   <script>
+
+function sum (...numbers) {
+    let result = 0;
+    for(let number of numbers) {
+        result += number;
+    }
+    return result;
+}
+    const total = sum(1,2,556,5,1);
+    console.log(`Your total is $${total}`);
+
+    function getAverage (...numbers) {
+        let result = 0;
+        for(let number of numbers) {
+            result += number;
+        }
+        return result / numbers.length;
+    }
+
+    const totalMarks = getAverage(75,95,81,88);
+    console.log(total)
+
+   </script> 
+</body>
+</html>
